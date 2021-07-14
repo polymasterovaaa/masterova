@@ -13,6 +13,18 @@ public class BankCard{
 
     private String accountNumber;
 
+    public BankCard(Long id, String cardNumber, String accountNumber, LocalDate validity, String cvv, String owner ) {
+
+        this.cardNumber = cardNumber;
+        this.accountNumber = accountNumber;
+        this.validity = validity;
+        this.cvv = cvv;
+        this.owner = owner;
+        this.id = id;
+    }
+
+    public BankCard() {}
+
     private LocalDate validity;
 
     private String cvv;
